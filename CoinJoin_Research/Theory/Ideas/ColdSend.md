@@ -13,13 +13,13 @@ Currently for a user to send mixed UTXO's to their Cold Storage they are advised
 
 Sending to Cold Storage could be simplified with the proposed ColdSend concept which requires the following 7 pieces of work;
 
-1.) Standardise ColdSend-Keychain.txt - A standard format for passing multiple addresses (not an xpub) from Cold Storage wallets to the CoinJoin tool.
-2.) Standardise ColdSend-QueueTX.txt  - A standard format for saving ready to broadcast tx's with suggested broadcast dates & times to lower risk of timing analysis. 
-3.) Add functionality within Cold Wallet tools to export ColdSend-Keychain.txt files.
-4.) Add functionality within CoinJoin tools to import ColdSend-Keychain.txt files
-5.) Add functionality within CoinJoin tools to export ColdSend-QueueTX.txt files
-6.) Add functionality within CoinJoin tools to import ColdSend-QueueTX.txt files
-7.) Add functionality within CoinJoin tools to automate broadcasting the tx's (from ColdSend-QueueTX.txt) in a privacy preserving way.
+1. Standardise ColdSend-Keychain.txt - A standard format for passing multiple addresses (not an xpub) from Cold Storage wallets to the CoinJoin tool.
+2. Standardise ColdSend-QueueTX.txt  - A standard format for saving ready to broadcast tx's with suggested broadcast dates & times to lower risk of timing analysis. 
+3. Add functionality within Cold Wallet tools to export ColdSend-Keychain.txt files.
+4. Add functionality within CoinJoin tools to import ColdSend-Keychain.txt files
+5. Add functionality within CoinJoin tools to export ColdSend-QueueTX.txt files
+6. Add functionality within CoinJoin tools to import ColdSend-QueueTX.txt files
+7. Add functionality within CoinJoin tools to automate broadcasting the tx's (from ColdSend-QueueTX.txt) in a privacy preserving way.
 
 ### Desired workflow
  
