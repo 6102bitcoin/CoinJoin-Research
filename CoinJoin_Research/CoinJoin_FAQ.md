@@ -25,7 +25,7 @@ Crucially, a user who's transactions / utxo's have been clustered will be unawar
 
 Fortunately an innovative method of obfuscating the on-chain links between utxo's was explained by Greg Maxwell back in 2013 - he called it CoinJoin.
 
-The basic idea is that a transaction is created with inputs from multiple users and outputs belonging to the same users.
+The basic idea is that a transaction is created with inputs from multiple users.
 
 The transaction is constructed such that it is not possible for someone analysing the blockchain to determine which output belongs to which user.
 
