@@ -19,7 +19,7 @@ Alternately, clustering could just as easily be done by malicious adversaries wh
 
 Future criminals may intentionally create transactions in order to trick chain analysis companies into misidentifying users, allowing them to evade detection (after all, who continues searching for evidence after the criminal has been caught?)
 
-Crucially, a user who's transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
+Crucially, a user whose transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
 
 # The (start of a) Solution - CoinJoin
 
