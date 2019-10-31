@@ -8,7 +8,7 @@ Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to o
 
 # The Problem
 
-Because anyone can see the links between transaction inputs and outputs it's possible for anyone to analyse previous transaction behaviour in an attempt to link transactions and utxo's together, this process is sometimes called clustering.
+Because anyone can see the links between transaction inputs and outputs it's possible for anyone to analyse previous and future transaction behaviour in an attempt to link multiple Bitcoin addresses to the same entity, this process is sometimes called clustering.
 
 Some companies specialise in this kind of analysis of the bitcoin blockchain and are known as 'Chain Analysis' companies. Some well known examples are chainalysis & crystal.
 
