@@ -4,11 +4,11 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
 
 # Background
 
-Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to outputs (new unspent utxo's) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions).
+Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to outputs (new unspent utxo's) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions). Yet interpreting these transactions and the Blockchain is a non-trivial task, because Bitcoin transaction are not equivalent to Bitcoin payments.
 
 # The Problem
 
-Because anyone can see the links between transaction inputs and outputs it's possible for anyone to analyse previous transaction behaviour in an attempt to link transactions and utxo's together, this process is sometimes called clustering.
+Because anyone can see the links between transaction inputs and outputs it's possible for anyone to analyse previous and future transaction behaviour in an attempt to link multiple Bitcoin addresses to the same entity, this process is sometimes called clustering.
 
 Some companies specialise in this kind of analysis of the bitcoin blockchain and are known as 'Chain Analysis' companies. Some well known examples are chainalysis & crystal.
 
@@ -17,15 +17,15 @@ Despite their best efforts it is highly likely that they will at some point misi
 
 Alternately, clustering could just as easily be done by malicious adversaries who wish to identify people to target for ransom or blackmail.
 
-Future criminals may intentionally create transactions in order to trick chain analysis companies into misidentifying users, allowing them to evade detection (after all, who continues searching for evidence after the criminal has been caught?)
+Future criminals may intentionally create transactions in order to trick chain analysis companies into misidentifying users, allowing them to evade detection or shift the blame to an innocent person (after all, who continues searching for evidence after the criminal has been caught?)
 
-Crucially, a user who's transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
+Crucially, a user whose transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
 
 # The (start of a) Solution - CoinJoin
 
 Fortunately an innovative method of obfuscating the on-chain links between utxo's was explained by Greg Maxwell back in 2013 - he called it CoinJoin.
 
-The basic idea is that a transaction is created with inputs from multiple users and outputs belonging to the same users.
+The basic idea is that a transaction is created with inputs from multiple users.
 
 The transaction is constructed such that it is not possible for someone analysing the blockchain to determine which output belongs to which user.
 
@@ -73,7 +73,7 @@ Someone has to coordinate the construction of the CoinJoin transaction, lets wor
 
 **Coordination Approach 1: Risk of privacy loss & bitcoin loss (DO NOT DO THIS)**
 
-If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private key's of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
+If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
 
 **Coordination Approach 2: Risk of privacy loss**
 
