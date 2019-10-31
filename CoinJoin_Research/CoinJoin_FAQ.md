@@ -77,9 +77,11 @@ If Alice, Bob and Charlie are acquainted and fully trust each other with their b
 
 **Coordination Approach 2: Risk of privacy loss**
 
-An incremental improvement would be for one member of the group to collect the required information from each user and create a transaction which each user then individually signs.
+(a) An incremental improvement would be for one member of the group to collect the required information from each user and create a transaction which each user then individually signs.
 
 The benefit With this approach is that there is no risk of loss of bitcoin (provided each user checks that the transaction they are signing sends their funds to addresses they wish to).
+
+(b) Another direction to improve this scheme is, if a central coordinator actor knows the mapping, instead of the parties involved.
 
 **Coordination Approach 3: No Risk of loss**
 
