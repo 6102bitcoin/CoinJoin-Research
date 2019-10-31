@@ -138,7 +138,6 @@ Wasabi consists of a wallet which allows you to receive bitcoin, optionally mix,
 *Note*: BIP 158 is not as good as running your own node. You trust
 - The Wasabi server gives you the correct filters
 - The Wasabi server to not withhold any filters
-- The block you download from a P2P node is actually in the valid chain
 
 ## Whirlpool
 Whirlpool is a mixing tool which extends the functionality of the Samourai Wallet (SW) application for Android to include CoinJoin capabilities.
