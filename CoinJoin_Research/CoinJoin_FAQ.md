@@ -4,7 +4,7 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
 
 # Background
 
-Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to outputs (new unspent utxo's) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions).
+Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to outputs (new unspent utxo's) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions). Yet interpreting these transactions and the Blockchain is a non-trivial task, because Bitcoin transaction are not equivalent to Bitcoin payments.
 
 # The Problem
 
