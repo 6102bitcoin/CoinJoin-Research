@@ -73,7 +73,7 @@ Someone has to coordinate the construction of the CoinJoin transaction, lets wor
 
 **Coordination Approach 1: Risk of privacy loss & bitcoin loss (DO NOT DO THIS)**
 
-If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private key's of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
+If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
 
 **Coordination Approach 2: Risk of privacy loss**
 
