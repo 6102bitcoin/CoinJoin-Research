@@ -97,7 +97,7 @@ I will add information about Stage 3 in the near future.
 
 # The Implementations
 
-There have been many projects which attempted to make it possible for users to CoinJoin their utxo's, the three that are currently active are:
+There have been many projects which attempted to make it possible for users to CoinJoin their utxos, the three that are currently active are:
 - [JoinMarket](https://github.com/JoinMarket-Org/joinmarket-clientserver)
 - [Wasabi](https://wasabiwallet.io)
 - [Whirlpool](https://github.com/Samourai-Wallet/Whirlpool)
