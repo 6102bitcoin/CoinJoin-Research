@@ -111,6 +111,10 @@ I will attempt to provide a brief explanation of each tool.
 ## JoinMarket:
 The core principle of JoinMarket is that markets are an efficient way to incentivise users to CoinJoin.
 
+- Stage 1 | Pre-Mix : Blockchain communications done over Bitcoin Core and optionally over Tor
+- Stage 2 | Mix : Coordination Approach 2/a
+- Stage 3 | Post-Mix : Bitcoin Core
+
 The [wiki](https://en.bitcoin.it/wiki/JoinMarket) describes this eloquently:
 
 > A CoinJoin transaction requires other people to take part. The right resources (coins) have to be in the right place, at the right time, in the right quantity. This isn't a software or tech problem but an economic problem. JoinMarket works by creating a new kind of market that allocates these resources in the best way.
