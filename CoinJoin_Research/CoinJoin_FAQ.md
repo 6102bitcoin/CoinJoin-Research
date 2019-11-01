@@ -129,9 +129,9 @@ I will provide a more detailed review / comparison once I have tested the softwa
 ## Wasabi
 Wasabi consists of a wallet which allows you to receive bitcoin, optionally mix, and then send bitcoin.
 
-- Stage 1 | Pre-Mix : All communication done over TOR, [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) Block Filters (*see note*)
+- Stage 1 | Pre-Mix : All communication done over Tor, [BIP 158](https://github.com/bitcoin/bips/blob/master/bip-0158.mediawiki) Block Filters (*see note*)
 - Stage 2 | Mix : Coordination Approach 3
-- Stage 3 | Post-Mix : utxo labelling & coin control, broadcast over TOR via random node
+- Stage 3 | Post-Mix : utxo labelling & coin control, broadcast over Tor via random node
 
 *Note on BIP 158*
 
@@ -150,9 +150,9 @@ Wasabi consists of a wallet which allows you to receive bitcoin, optionally mix,
 
 ## Whirlpool
 Whirlpool is a mixing tool which extends the functionality of the Samourai Wallet (SW) application for Android to include CoinJoin capabilities.
-- Stage 1 | Pre-Mix : All communication done over TOR, Connect to own node or SW developers node (*see note*)
+- Stage 1 | Pre-Mix : All communication done over Tor, Connect to own node or SW developers node (*see note*)
 - Stage 2 | Mix : Coordination Approach 3
-- Stage 3 | Post-Mix : utxo labelling & coin control, broadcast over TOR via your own node or SW developers node (*see note*)
+- Stage 3 | Post-Mix : utxo labelling & coin control, broadcast over Tor via your own node or SW developers node (*see note*)
 
 *Note on using Own node or SW developers node*
 
