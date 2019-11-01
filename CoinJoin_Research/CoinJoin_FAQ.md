@@ -10,7 +10,7 @@ Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to o
 
 Because anyone can see the links between transaction inputs and outputs it's possible for anyone to analyse previous and future transaction behaviour in an attempt to link multiple Bitcoin addresses to the same entity, this process is sometimes called clustering.
 
-Some companies specialise in this kind of analysis of the bitcoin blockchain and are known as 'Chain Analysis' companies. Some well known examples are chainalysis & crystal.
+Some companies specialise in this kind of analysis of the bitcoin blockchain and are known as 'Chain Analysis' companies. Some well known examples are Chainalysis & Crystal.
 
 These companies claim that the purpose of this clustering is to 'detect fraud' or 'identify criminals'.
 Despite their best efforts it is highly likely that they will at some point misidentify the owner of a utxo resulting in wrongful conviction as law enforcement blindly trusts these systems.
