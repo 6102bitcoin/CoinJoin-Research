@@ -92,7 +92,8 @@ Someone has to coordinate the construction of the CoinJoin transaction, lets wor
 
 ``` (WARNING - **DO NOT DO THIS**) ```
 
-If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
+If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort.
+They would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
 
 **Coordination Approach 2: Risk of privacy loss**
 
@@ -112,7 +113,11 @@ Private coordination can be achieved by using blinded signatures to construct th
 
 I won't go into the details here (at least not for now) but suffice to say that this **is possible** and much better than Coordination Approach 1 or 2.
 
-*Note: Though Coordination Approach 3 makes it possible to **coordinate** the CoinJoin without losing any privacy this is just one stage of the process and thus does not guarantee that the whole CoinJoin process is private. Put another way, Coordination Approach 3 is required for complete network privacy, but is not sufficient. *
+**Important Note**
+
+*Coordination Approach 3 makes it **possible** to **coordinate** the CoinJoin without the user losing any privacy. 
+That said, this is **just one stage** of the process and thus **does not guarantee** that the whole CoinJoin process is private. 
+Put another way, Coordination Approach 3 is **required** for complete network privacy, but is not **sufficient**. *
 
 ## Stage 3 | Post-mix
 
