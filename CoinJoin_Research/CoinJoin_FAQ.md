@@ -2,6 +2,23 @@ FAQ - CoinJoin
 
 By [6102bitcoin](https://twitter.com/6102bitcoin)
 
+1) [**Background**](#-Background)
+2) [**The Problem**](#-The-Problem)
+3) [**The \(start of a\) Solution - CoinJoin**]()
+4) [**\(Start of a\) Solution?**]()
+	- [Stage 1 | Pre-mix]()
+ 	- [Stage 2 | Mix]()
+    		- Coordination Approach 1: Risk of privacy loss & bitcoin loss 
+    		- Coordination Approach 2: Risk of privacy loss
+      			- Peer Coordinator (2a)
+      			- Centralised Coordinator (2b)
+    		- Coordination Approach 3: No Risk of loss
+  	- [Stage 3 | Post Mix]()
+5) [**The Implementations**](#The-Implementations)
+  	- [JoinMarket](#JoinMarket)
+  	- [Wasabi](#Wasabi)
+  	- [Whirlpool](#Whirlpool)
+
 # Background
 
 Bitcoin transactions are public by nature; they map inputs (unspent utxo's) to outputs (new unspent utxo's) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions). Yet interpreting these transactions and the Blockchain is a non-trivial task, because Bitcoin transaction are not equivalent to Bitcoin payments.
