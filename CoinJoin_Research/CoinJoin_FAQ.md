@@ -8,11 +8,11 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
 4) [**The Details**](#the-details)
 	- [Stage 1 | Pre-mix](#stage-1--pre-mix)
  	- [Stage 2 | Mix](#stage-2--mix)
-    	- Coordination Approach 1: Risk of privacy loss & Risk of bitcoin loss 
-    	- Coordination Approach 2: Risk of privacy loss
+    	- Coordination Approach 1
+    	- Coordination Approach 2
       		- Peer Coordinator (2a)
       		- Centralised Coordinator (2b)
-    	- Coordination Approach 3: No Risk of loss
+    	- Coordination Approach 3
   	- [Stage 3 | Post-mix](#stage-3--post-mix)
 5) [**The Implementations**](#the-implementations)
   	- [JoinMarket](#joinmarket)
@@ -89,24 +89,39 @@ How the CoinJoin itself happens in a privacy preserving way.
 
 Someone has to coordinate the construction of the CoinJoin transaction, lets work through the possible coordination approaches:
 
-**Coordination Approach 1: Risk of privacy loss & Risk of bitcoin loss** 
+**Coordination Approach 1**
 
 ``` (WARNING - **DO NOT DO THIS**) ```
 
 If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort.
-They would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
 
-**Coordination Approach 2: Risk of privacy loss**
+They would all share the raw private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
+
+With this approach there is a clear and present risk of both privacy loss & bitcoin loss.
+
+ - Privacy Loss: With this approach the peer constructing the CoinJoin is REQUIRED to know all the links between inputs and outputs, thus the other members of the CoinJoin are trusting their peer with their privacy.
+ 
+ - Bitcoin Loss: With this approach the peer constructing the CoinJoin is REQUIRED to be able to spend each input, thus the other members of the CoinJoin are trusting their peer with their bitcoin while the CoinJoin is underway.
+
+**Coordination Approach 2**
 
 (a) An incremental improvement would be for one member of the group to collect the required information from each user and create a transaction which each user then individually signs.
 
-The benefit With this approach is that there is no risk of loss of bitcoin (provided each user checks that the transaction they are signing sends their funds to addresses they wish to).
+With this approach there is a clear and present risk of both privacy loss.
 
-(b) Another direction to improve this scheme is, if a central coordinator actor knows the mapping, instead of the parties involved.
+ - Privacy Loss: With this approach the peer constructing the CoinJoin is REQUIRED to know all the links between inputs and outputs, thus the other members of the CoinJoin are trusting their peer with their privacy.
+ 
+However, the benefit with this approach is that it does not REQUIRE users to risk loss of bitcoin. 
 
-**Coordination Approach 3: No Risk of loss**
+This is not to say that it's impossible for a CoinJoin tool using this approach to steal/lose bitcoin, rather that this approach makes it POSSIBLE that the CoinJoin tool can be designed in such a way as to eliminate the risk of bitcoin loss. 
 
-It is clearly preferable if Alice, Bob and Charlie can coordinate the construction of a transaction without having to trust anyone with either their bitcoin or their privacy.
+(b) Another direction to improve this scheme is, if a central coordinating actor knows the mapping, instead of the parties involved.
+
+This has much the same privacy / bitcoin loss risks as approach 2a.
+
+**Coordination Approach 3**
+
+It is clearly preferable if Alice, Bob and Charlie can coordinate the construction of a transaction without having to trust anyone with either their privacy or their bitcoin.
 
 Private coordination can be achieved by using blinded signatures to construct the transaction in such a way that each participant;
 - Retains full control of their bitcoin at all times
@@ -114,11 +129,14 @@ Private coordination can be achieved by using blinded signatures to construct th
 
 I won't go into the details here (at least not for now) but suffice to say that this **is possible** and much better than Coordination Approach 1 or 2.
 
+Again, this is not to say that it's impossible for a CoinJoin tool using this approach to steal/lose bitcoin / have privacy risks, rather that this approach makes it POSSIBLE that the CoinJoin tool can be designed in such a way as to eliminate the risk of privacy loss / bitcoin loss. 
+
 **Important Note**
 
-*Coordination Approach 3 makes it **possible** to **coordinate** the CoinJoin without the user losing any privacy. 
+Coordination Approach 3 makes it **possible** to **coordinate** the CoinJoin without the user losing any privacy. 
 That said, this is **just one stage** of the process and thus **does not guarantee** that the whole CoinJoin process is private. 
-Put another way, Coordination Approach 3 is **required** for complete network privacy, but is not **sufficient**. *
+
+Put another way, Coordination Approach 3 is **required** for complete network privacy, but is not **sufficient**.
 
 ## Stage 3 | Post-mix
 
