@@ -4,7 +4,7 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
 
 1) [**Background**](#background)
 2) [**The Problem**](#the-problem)
-3) [**The Solution - CoinJoin**](#the--solution---coinjoin)
+3) [**The Solution**](#the-solution)
 4) [**The Details**](#the-details)
 	- [Stage 1 | Pre-mix](#stage-1--pre-mix)
  	- [Stage 2 | Mix](#stage-2--mix)
@@ -18,6 +18,7 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
   	- [JoinMarket](#joinmarket)
   	- [Wasabi](#wasabi)
     - [Whirlpool](#whirlpool)
+
 
 # Background
 
@@ -38,7 +39,7 @@ Future criminals may intentionally create transactions in order to trick chain a
 
 Crucially, a user whose transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
 
-# The Solution - CoinJoin
+# The Solution
 
 Fortunately an innovative method of obfuscating the on-chain links between utxo's was explained by Greg Maxwell back in 2013 - he called it CoinJoin.
 
