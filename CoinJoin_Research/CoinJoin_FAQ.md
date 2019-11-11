@@ -2,22 +2,22 @@ FAQ - CoinJoin
 
 By [6102bitcoin](https://twitter.com/6102bitcoin)
 
-1) [**Background**](#-Background)
-2) [**The Problem**](#-The-Problem)
-3) [**The \(start of a\) Solution - CoinJoin**]()
-4) [**\(Start of a\) Solution?**]()
-	- [Stage 1 | Pre-mix]()
- 	- [Stage 2 | Mix]()
-    		- Coordination Approach 1: Risk of privacy loss & bitcoin loss 
-    		- Coordination Approach 2: Risk of privacy loss
-      			- Peer Coordinator (2a)
-      			- Centralised Coordinator (2b)
-    		- Coordination Approach 3: No Risk of loss
-  	- [Stage 3 | Post Mix]()
-5) [**The Implementations**](#The-Implementations)
-  	- [JoinMarket](#JoinMarket)
-  	- [Wasabi](#Wasabi)
-  	- [Whirlpool](#Whirlpool)
+1) [**Background**](#background)
+2) [**The Problem**](#the-problem)
+3) [**The Solution - CoinJoin**](#the--solution---coinjoin)
+4) [**The Details**](#the-details)
+	- [Stage 1 | Pre-mix](#stage-1--pre-mix)
+ 	- [Stage 2 | Mix](#stage-2--mix)
+    	- Coordination Approach 1: Risk of privacy loss & Risk of bitcoin loss 
+    	- Coordination Approach 2: Risk of privacy loss
+      		- Peer Coordinator (2a)
+      		- Centralised Coordinator (2b)
+    	- Coordination Approach 3: No Risk of loss
+  	- [Stage 3 | Post-mix](#stage-3--post-mix)
+5) [**The Implementations**](#the-implementations)
+  	- [JoinMarket](#joinmarket)
+  	- [Wasabi](#wasabi)
+    - [Whirlpool](#whirlpool)
 
 # Background
 
@@ -38,7 +38,7 @@ Future criminals may intentionally create transactions in order to trick chain a
 
 Crucially, a user whose transactions / utxo's have been clustered will be unaware that this has happened and once the transactions have been made it is impossible to erase the trail on the blockchain.
 
-# The (start of a) Solution - CoinJoin
+# The Solution - CoinJoin
 
 Fortunately an innovative method of obfuscating the on-chain links between utxo's was explained by Greg Maxwell back in 2013 - he called it CoinJoin.
 
@@ -69,7 +69,7 @@ Input 3: 0.1 BTC (Charlie)      Output 3: 0.1 BTC
 
 It is not possible for someone analysing this transaction to identify which output is owned by which user.
 
-# (Start of a) Solution?
+# The Details
 
 The CoinJoin process explained above obfuscates the on-chain links.
 This is a start - but as with many things the devil is in the details.
@@ -88,7 +88,9 @@ How the CoinJoin itself happens in a privacy preserving way.
 
 Someone has to coordinate the construction of the CoinJoin transaction, lets work through the possible coordination approaches:
 
-**Coordination Approach 1: Risk of privacy loss & bitcoin loss (DO NOT DO THIS)**
+**Coordination Approach 1: Risk of privacy loss & Risk of bitcoin loss** 
+
+``` (WARNING - **DO NOT DO THIS**) ```
 
 If Alice, Bob and Charlie are acquainted and fully trust each other with their bitcoin and their privacy then any one of them could coordinate the construction of this transaction with minimal effort - they would all share the private keys of their coins, one user would import these coins into a wallet and make a transaction paying out to each users new address.
 
@@ -112,7 +114,7 @@ I won't go into the details here (at least not for now) but suffice to say that 
 
 *Note: Though Coordination Approach 3 makes it possible to **coordinate** the CoinJoin without losing any privacy this is just one stage of the process and thus does not guarantee that the whole CoinJoin process is private. Put another way, Coordination Approach 3 is required for complete network privacy, but is not sufficient. *
 
-## Stage 3 | Post mix
+## Stage 3 | Post-mix
 
 I will add information about Stage 3 in the near future.
 
