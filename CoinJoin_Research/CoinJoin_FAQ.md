@@ -8,16 +8,14 @@ By [6102bitcoin](https://twitter.com/6102bitcoin)
 4) [**The Details**](#the-details)
 	- [Stage 1 | Pre-mix](#stage-1--pre-mix)
  	- [Stage 2 | Mix](#stage-2--mix)
-    	- Coordination Approach 1
-    	- Coordination Approach 2
-      		- Peer Coordinator (2a)
-      		- Centralised Coordinator (2b)
-    	- Coordination Approach 3
+    	 - Coordination Approach 1
+    	 - Coordination Approach 2
+    	 - Coordination Approach 3
   	- [Stage 3 | Post-mix](#stage-3--post-mix)
 5) [**The Implementations**](#the-implementations)
   	- [JoinMarket](#joinmarket)
   	- [Wasabi](#wasabi)
-    - [Whirlpool](#whirlpool)
+	- [Whirlpool](#whirlpool)
 
 
 # Background
@@ -87,7 +85,14 @@ I will add information about Stage 1 in the near future.
 
 How the CoinJoin itself happens in a privacy preserving way.
 
-Someone has to coordinate the construction of the CoinJoin transaction, lets work through the possible coordination approaches:
+Someone has to coordinate the construction of the CoinJoin transaction, lets work through the possible coordination approaches. We will end up with the following result:
+
+| Approach 	| Guaranteed Risk of Privacy Loss 	| GuaranteedRisk of Bitcoin Loss 	|
+| -------- 	| -------------------- 			| -------------------- 	|
+| 1        	| Yes 					| Yes 			|
+| 2		| Yes					| No			|
+| 3		| No					| No			|
+
 
 **Coordination Approach 1**
 
@@ -103,11 +108,11 @@ With this approach there is a clear and present risk of both privacy loss & bitc
  
  - Bitcoin Loss: With this approach the peer constructing the CoinJoin is REQUIRED to be able to spend each input, thus the other members of the CoinJoin are trusting their peer with their bitcoin while the CoinJoin is underway.
 
-**Coordination Approach 2**
+**Coordination Approach 2a**
 
-(a) An incremental improvement would be for one member of the group to collect the required information from each user and create a transaction which each user then individually signs.
+An incremental improvement would be for one member of the group to collect the required information from each user and create a transaction which each user then individually signs.
 
-With this approach there is a clear and present risk of both privacy loss.
+With this approach there is a clear and present risk of privacy loss.
 
  - Privacy Loss: With this approach the peer constructing the CoinJoin is REQUIRED to know all the links between inputs and outputs, thus the other members of the CoinJoin are trusting their peer with their privacy.
  
@@ -115,7 +120,9 @@ However, the benefit with this approach is that it does not REQUIRE users to ris
 
 This is not to say that it's impossible for a CoinJoin tool using this approach to steal/lose bitcoin, rather that this approach makes it POSSIBLE that the CoinJoin tool can be designed in such a way as to eliminate the risk of bitcoin loss. 
 
-(b) Another direction to improve this scheme is, if a central coordinating actor knows the mapping, instead of the parties involved.
+**Coordination Approach 2b**
+
+Another direction to improve this scheme is, if a central coordinating actor knows the mapping, instead of the parties involved.
 
 This has much the same privacy / bitcoin loss risks as approach 2a.
 
