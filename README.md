@@ -2,7 +2,18 @@
 
 CoinJoin research is a fascinating topic - This repo serves as a place to organise & archive any and all CoinJoin research.
 
-Overview
+I am very open to suggestions regarding how to structure this repo.
+
+# Objectives
+
+Objectives
+- Archive previous CoinJoin implementations
+- Archive previous CoinJoin research
+- Document learnings from previous CoinJoin implementations
+- Compare currently available CoinJoin tools
+- Propose new areas of CoinJoin research
+
+# Overview
 
 This repository is split into two main folders, Research & Implementations. As and when research ideas are manifested as code which can be used, the folders will be moved to the implementation section.
 
@@ -51,17 +62,6 @@ Sections
 	- [15_TumbleBit-BUSEC](/CoinJoin_Implementations/15_TumbleBit-BUSEC/summary.md)
 	- [16_Breeze-stratisproject](/CoinJoin_Implementations/16_Breeze-stratisproject/summary.md)
 	- [17_CoinSwapCS-AdamISZ](/CoinJoin_Implementations/17_CoinSwapCS-AdamISZ/summary.md)
-
-Objectives
-- Archive previous CoinJoin implementations
-- Archive previous CoinJoin research
-- Document learnings from previous CoinJoin implementations
-- Compare currently available CoinJoin tools
-- Propose new areas of CoinJoin research
-
-I am very open to suggestions regarding how to structure this repo.
-
-I intend to make pull requests to the bitcoin wiki to make this information widely available.
 
 Data_Scraping
 - Where possible capture audio & presentation slides rather than video to reduce size of archive
