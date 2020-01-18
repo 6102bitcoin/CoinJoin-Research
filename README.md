@@ -42,6 +42,7 @@ Sections
     - Knapsack
     - Snicker
     - Zerolink
+    - Byzantine Cycle Mode
   - [Peripheral Topics](/CoinJoin_Research/Peripheral_Topics)
 - [CoinJoin Implementations](/CoinJoin_Implementations)
 	- Format: ##_ProjectName-GithubRepoUserName
