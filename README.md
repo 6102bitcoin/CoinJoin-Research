@@ -42,9 +42,10 @@ Sections
     - CashFusion
     - Compact Confidential Transactions
     - JoinMarket Research
-    - Knapsack Mixing
+    - Knapsack
     - SNICKER
     - ZeroLink
+    - Transaction Cut-Through
     - Byzantine Cycle Mode
   - [Peripheral Topics](/CoinJoin_Research/Peripheral_Topics)
 - [CoinJoin Implementations](/CoinJoin_Implementations)
