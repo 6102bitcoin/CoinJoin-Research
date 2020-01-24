@@ -37,12 +37,16 @@ Sections
     - Boltzmann
     - CoinJoinXT
     - CoinShuffle
+    - CoinShuffle++
+    - ValueShuffle
+    - CashFusion
     - Compact Confidential Transactions
     - JoinMarket Research
     - Knapsack
-    - Snicker
-    - Zerolink
+    - SNICKER
+    - ZeroLink
     - Transaction Cut-Through
+    - Byzantine Cycle Mode
   - [Peripheral Topics](/CoinJoin_Research/Peripheral_Topics)
 - [CoinJoin Implementations](/CoinJoin_Implementations)
 	- Format: ##_ProjectName-GithubRepoUserName
