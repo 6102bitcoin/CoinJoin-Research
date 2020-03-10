@@ -4,7 +4,7 @@ CashFusion
 | ----------- 		| ----------	|
 | Project Name 		| CashFusion 		|
 | GitHub Page		| [CashFusion](https://github.com/cashshuffle/spec/blob/master/CASHFUSION.md) 	|
-| Wasabi Research Club | https://www.youtube.com/watch?v=bpLOSytc7vc |
+| Wasabi Research Club | [Part 1](https://www.youtube.com/watch?v=7PEzEBF9_I0) | [Part 2](https://www.youtube.com/watch?v=bpLOSytc7vc) |
 
 
 - [Analysing the Combinatoric Math in CashFusion](https://read.cash/@jonald_fyookball/analyzing-the-combinatoric-math-in-cashfusion-29943fb7) by Jonald Fyookball

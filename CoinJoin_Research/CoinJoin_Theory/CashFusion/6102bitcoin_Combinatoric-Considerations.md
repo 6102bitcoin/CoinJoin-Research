@@ -4,7 +4,9 @@ A caution against using 'computational infeasibility' to avoid linking inputs to
 
 _Notes / Thoughts by 6102bitcoin based on [WRC08](https://www.youtube.com/watch?v=bpLOSytc7vc)_
 
-- It is a privacy guarantee which gets weaker with every day of technological advancement
+- It is a privacy guarantee which gets weaker with every day of technological advancement. Research has been published suggesting that [Photonic subset sum](eaay5853.pdf) solving is faster than traditional computing.
+
+![](photonic_subset_sum.jpg)
 
 - For Chain Analysis companies is this a search or an optimisation problem?
 Maybe they only care about 1 participant or only need a certain confidence / precision which dramatically reduces the difficulty of finding a solution.
