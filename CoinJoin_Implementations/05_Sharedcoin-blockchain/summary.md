@@ -1,4 +1,4 @@
-﻿|               	| 				|
+|               	| 				|
 | ----------- 		| ----------	| 
 | Project Name 		| Sharedcoin 		|
 | Release Date		| 2013–11–03	|
@@ -10,5 +10,7 @@
 | Demo				| [link]() | 
 
 Removed from Blockchain.info wallet after an exploit (coinsoduku) was found that rendered it useless
+
+[Sharedcoin](https://github.com/sharedcoin/Sharedcoin) Last Commit 2015-01-29 by zootreeves archived 2020-03-10.
 
 ![.](screenshot.png)
