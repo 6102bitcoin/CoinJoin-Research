@@ -36,7 +36,7 @@ See Also
 There are currently 3 live implementations;
 - A feature in Samourai Wallet called [Stowaway](https://samouraiwallet.com/stowaway)
 - A feature in Joinmarket ([PayJoin](https://github.com/Joinmarket-Org/joinmarket-clientserver/blob/master/docs/PAYJOIN.md))
-- A feature in BTCPayServer called [P2EP](https://blog.btcpayserver.org/btcpay-server-1-0-4-0/) ([Specification](https://blog.btcpayserver.org/btcpay-server-1-0-4-0/), [Guide](https://docs.btcpayserver.org/features/payjoin))
+- A feature in BTCPayServer called [P2EP](https://blog.btcpayserver.org/btcpay-server-1-0-4-0/) ([Specification](https://docs.btcpayserver.org/features/payjoin/payjoin-spec), [Guide](https://docs.btcpayserver.org/features/payjoin))
 
 There are plans for implementation in the following wallets;
 - [Wasabi Wallet](https://github.com/zkSNACKs/WalletWasabi/pull/3528)
