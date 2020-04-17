@@ -8,7 +8,7 @@
 A meeting took place in which a number of individuals developed P2EP. 
 Some summaries / overviews are:
 - [P2EP Meeting Overview](https://medium.com/@nopara73/pay-to-endpoint-56eb05d3cac6) by Adam Fiscor (Nopara73)
-- [Block Digest_118 from 40:30](https://youtu.be/0-DS7X99F7Y?t=2415)by Adam Gibson (Waxwing)
+- [Block Digest_118 from 40:30](https://youtu.be/0-DS7X99F7Y?t=2415) by Adam Gibson (Waxwing)
 - [P2EP overview](https://blockstream.com/2018/08/08/en-improving-privacy-using-pay-to-endpoint/) by Matthew Haywood
 
 Waxwing later proposed the varient of P2EP called PayJoin
