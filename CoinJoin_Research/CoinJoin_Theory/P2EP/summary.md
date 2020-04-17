@@ -15,9 +15,15 @@ Waxwing later proposed the varient of P2EP called PayJoin
 - [PayJoin](https://joinmarket.me/blog/blog/payjoin/) by Waxwing
 - [Demo](https://joinmarket.me/blog/blog/payjoin-basic-demo/)
 
-There are currently 2 implementations;
+There are currently 3 live implementations;
 - A feature in Samourai Wallet called [Stowaway](https://samouraiwallet.com/stowaway)
 - A feature in Joinmarket ([PayJoin](https://github.com/Joinmarket-Org/joinmarket-clientserver/blob/master/docs/PAYJOIN.md))
+- A feature in BTCPayServer called [P2EP](https://blog.btcpayserver.org/btcpay-server-1-0-4-0/) ([Specification](https://blog.btcpayserver.org/btcpay-server-1-0-4-0/), [Guide](https://docs.btcpayserver.org/features/payjoin))
+
+There are plans for implementation in the following wallets;
+- [Wasabi Wallet](https://github.com/zkSNACKs/WalletWasabi/pull/3528)
+- [Blue Wallet](https://github.com/BlueWallet/BlueWallet/pull/984)
+- [Blockstream Green](https://blockstream.com/2020/04/16/en-bitcoin-privacy-improves-with-btcpay-servers-p2ep-implementation/)
 
 See Also
 - [BustaPay](https://github.com/6102bitcoin/CoinJoin-Research/tree/master/CoinJoin_Implementations/13_BustaPay-rhavar)
