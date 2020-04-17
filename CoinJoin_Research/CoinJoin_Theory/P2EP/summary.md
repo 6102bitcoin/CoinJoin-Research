@@ -28,6 +28,9 @@ There are plans for implementation in the following wallets;
 See Also
 - [BustaPay](https://github.com/6102bitcoin/CoinJoin-Research/tree/master/CoinJoin_Implementations/13_BustaPay-rhavar)
 
+# Further Reading
+- https://en.bitcoin.it/wiki/PayJoin
+
 # Implementations
 
 There are currently 3 live implementations;
@@ -51,11 +54,25 @@ INPUTS(User1, Merchant) -> OUTPUTS(User1, Merchant)
 
 INPUTS(0.1, 0.2) -> OUTPUTS(0.05, 0.25)
 
-This is **indistinguishable onchain as a PayJoin** because there is an output which is greater than the largest input && there is no subset of the inputs that would be sufficient to make this output, *i.e. There are no redundant inputs*.
+This is a Steganographic transaction, it is **indistinguishable onchain as a PayJoin** because there is an output which is greater than the largest input && there is no subset of the inputs that would be sufficient to make this output, *i.e. There are no redundant inputs*.
+
+# Limitations
+
+The fact that some payjoin transactions are steganographic should not be misunderstood to mean that all payjoins are non-trivial to figure out, particularly if the snowballing of the receiver utxo's is done in a non steganographic way.
+
+If the sending wallet is restricted to only steganographic transactions then it is likely that the sender will either;
+- Need many utxo's to pick from
+- Be unable to participate in many potential PayJoin transactions
+- Need to pre process utxo's to make it possible to participate regularly.
+
+As such, payjoin is not strictly superior to a CoinJoin. 
+An equal output CoinJoin is not steganographic like PayJoin can be, but it is a useful tool for breaking deterministic links & has other benefits which PayJoin doesn't offer.
+They are both types of multiparty bitcoin transactions.
+Other types include CoinSwap & CoinMerge.
 
 # Simple Chain Analysis Example
 
-Now suppose User 1 was a chain analysis company.
+Now suppose User 1 in the above example was a chain analysis company.
 
 The chain analysis company logs that the output worth 0.025 belongs to the merchant.
 
@@ -92,3 +109,4 @@ Additionally they now suspect that the user spent 0.2 BTC at the store, which co
 # Fake PayJoin Implementations
 
 There are currently no wallets which have an explicit fake payjoin feature (where a redundant input is used).
+
