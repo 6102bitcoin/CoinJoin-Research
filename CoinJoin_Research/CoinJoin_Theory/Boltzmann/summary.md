@@ -6,5 +6,8 @@ It matches inputs/outputs amounts to compute transactions entropy and linkabilit
 - Bitcoin Transactions & Privacy ([part 1](https://gist.github.com/LaurentMT/e758767ca4038ac40aaf)) ([part 2](https://gist.github.com/LaurentMT/d361bca6dc52868573a2)) ([part 3](https://gist.github.com/LaurentMT/e8644d5bc903f02613c6))
 - Python impl ([github](https://github.com/Samourai-Wallet/boltzmann))
 - Java impl ([github](https://github.com/Samourai-Wallet/efficiency-score))
+- [Updated Repo](https://code.samourai.io/oxt/boltzmann)
 
 Source: https://www.kycp.org/#/about
+
+- [Wasabi Research Club](https://www.youtube.com/watch?v=CYIDAqMSc4A)
